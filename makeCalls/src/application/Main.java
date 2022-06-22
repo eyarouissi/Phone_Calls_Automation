@@ -142,7 +142,7 @@ public class Main extends Application {
 		        okButton.setOnAction(e -> {
 		            SendingMsg sendMsg = new SendingMsg();
 		            try {
-						sendMsg.textMsg(numberField.getText(),"test");
+						sendMsg.textMsg(numberField.getText(),td.getContentText());
 					} catch (MalformedURLException | InterruptedException e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
